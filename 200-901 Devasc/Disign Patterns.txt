@@ -1,0 +1,94 @@
+Determine When to Use Design Patterns
+
+================================
+
+Understanding Design Patterns
+
+Design patterns are templates developers use to approach coding challenges with a plan of execution.
+
+hero's Journy can use the pattern for there use.
+Design pattern is een set regels/pad of code is geschreven. 
+voor elke taal code 
+
+Design patterns are coded in specific languages to solve problems. True or false?
+True
+False
+
+==================================
+
+Singleton Design Pattern
+
+The singleton pattern is a common pattern you'll run into when developing. 
+It's also a useful introduction to a practical implementation of a design pattern.
+
+goed voor database connection (eenmalig gebruik)
+static value's 
+
+database connection strings
+configuration values
+constats/static values
+
+
+The singleton design patterns describes how to do which of the following?
+Create methods that are declared once
+Create a class that's only ever instantiated once
+
+=================================================
+
+Observer Design Pattern
+
+The observer design pattern is used to notify dependents of certain events, usually state changes in a subject.
+
+two classes defined by observer patterns.
+
+    -subject, wich maintains a list of observers and includes methods for attaching, detaching and notifying observers.
+
+    - observer wich has a method to recieve updates form subject
+
+    een observer kan meerder subject connections hebben
+
+Which of the following are components of an observer? (Choose three
+
+
+
+=================================================v
+
+Model View Controller
+
+Model-View-Controller (MVC) is a software pattern that separates data, behavior, and presentation into isolated components.
+
+is a high level abtration where responsiblities are divided up into three loosely coupled components
+
+
+    -Model =
+        the component that stores data
+    -View
+        the component that displays data
+    -Controller
+        the component that handles 
+            login flow
+            user interaction
+            directs models and views
+
+
+Match the MVC components to their function.
+
+Stores data
+Model
+Presents data
+views
+Handles logic
+Controller
+
+
+==================================================
+Design Patterns Summary
+
+Design patterns are important structures for writing reliable software solutions to known problems.
+
+test solutions
+framework for new code
+clarify between developers
+
+A design pattern can communicate the intent of code to someone reading it for the first time. True or false?
+True

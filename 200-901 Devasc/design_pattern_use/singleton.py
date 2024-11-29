@@ -15,13 +15,12 @@ class ConfigValues:
       else:
          ConfigValues.__instance = self
 
-
-
-s = ConfigValues.getInstance()
-print(s)
-
-s = ConfigValues.getInstance()
-print(s)
-
 s = ConfigValues()
 print (s)
+
+s = ConfigValues.getInstance()
+print(s)
+
+s = ConfigValues.getInstance()
+print(s)
+
