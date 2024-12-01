@@ -10,3 +10,17 @@ def validate_path(expected_path, character_path):
     return character_name, accuracy_percentage
 
 
+
+# dubble character
+def double_string(string):
+    # double = ""
+    # for char in string:
+    #     double = 
+        
+
+
+
+    output = ""
+    for i in string:
+        output = output + i*2
+    return output    
