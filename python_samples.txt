@@ -24,3 +24,22 @@ def double_string(string):
     for i in string:
         output = output + i*2
     return output    
+
+
+    ===========================
+    dict met key value pairs
+
+    def get_character_record(name, server, level, rank):
+
+    record = {
+        'name'    : name,
+        'server'  : server,
+        'level'   : level,
+        'rank'    : rank,
+        'ID'      : f'{name}#{server}'
+    }
+    
+
+    
+    return record
+
