@@ -157,3 +157,22 @@ False
 Correct!
 ================================================================
 
+Untracking and Unstaging Files
+
+Keeping files out of your repository is an important skill to know as well.
+.gitignore
+hier stop je files in die je niet mee wilt commiten
+
+bv met git add 8
+en je ziet het anders als files die niet Staged zijn
+
+dus je maakt een .gitignore
+met daar in bv.
+test.txt 
+
+
+een file uit je repo halen
+git rm test.txt --cached
+
+
+================================================================
