@@ -1,85 +1,159 @@
-Getting Started with Git
+    Getting Started with Git
 
 
-Understanding Version Control Systems and Git
+    Understanding Version Control Systems and Git
 
-Version Control Systems are a way to maintain a historical record of all changes to your source code. 
-Git is a type of distributed system that does not rely on a central master copy.
+    Version Control Systems are a way to maintain a historical record of all changes to your source code. 
+    Git is a type of distributed system that does not rely on a central master copy.
 
-vcs
-version Control System
+    vcs
+    version Control System
 
-to reference and roll back to
-collabrating with ohter people
-
-
-vcs rely on a master database to maintain all data. history, file revisions, etc.
-working on same file is possilble and not locked out.
-can work off line 
-
-git 2005 distributed version Control system
-iedereen heeft een full version van de repository.
-"full clones"  commit are locally the you  push to the master repository.
+    to reference and roll back to
+    collabrating with ohter people
 
 
-in cloud or locally
+    vcs rely on a master database to maintain all data. history, file revisions, etc.
+    working on same file is possilble and not locked out.
+    can work off line 
 
-Installing Git
-
-In this video we'll walk through the installation process for Git and discuss a few of the options available to us.
-
-installation options leave default 
-editor VS code
-
-cmd
-git --version
+    git 2005 distributed version Control system
+    iedereen heeft een full version van de repository.
+    "full clones"  commit are locally the you  push to the master repository.
 
 
-linux apt get git installation
+    in cloud or locally
+
+    Installing Git
+
+    In this video we'll walk through the installation process for Git and discuss a few of the options available to us.
+
+    installation options leave default 
+    editor VS code
+
+    cmd
+    git --version
 
 
-=================================================================
-
-Creating your First Repository
-
-Creating a repository in Git is an easy process. We'll walk through that here as well as creating our first commit.
-
-Which subdirectory does git create in order to store details and history for the repository?
-.git
+    linux apt get git installation
 
 
-github to local you clone everything like also historical data.
+    =================================================================
 
-create repo form scratsh.
+    Creating your First Repository
 
-git config --global user.name "chris samar"
-git config --global user.email "samar.chris@gmail.com"
-git config --list
+    Creating a repository in Git is an easy process. We'll walk through that here as well as creating our first commit.
 
-git init /in de folder die je waar je een repo van wilt maken.
+    Which subdirectory does git create in order to store details and history for the repository?
+    .git
 
-git add file om de file te tracken in je repo
 
-git commit -m "commented on"
+    github to local you clone everything like also historical data.
 
-====================================================================
+    create repo form scratsh.
 
-Staging and Committing Files
+    git config --global user.name "chris samar"
+    git config --global user.email "samar.chris@gmail.com"
+    git config --list
 
-Files in Git have a lifecycle of three separate phases: Unmodified, Modified, and Staged. Understanding these phases is critical for understanding how Git commits work.
+    git init /in de folder die je waar je een repo van wilt maken.
 
-git add * adds all Files
+    git add file om de file te tracken in je repo
 
-files stages in git
-Unmodified -u
-Modified -m
-Staged
+    git commit -m "commented on"
 
-commit met comment
+    ====================================================================
 
-pushed to repository
- 
- 
- 
+    Staging and Committing Files
+
+    Files in Git have a lifecycle of three separate phases: Unmodified, Modified, and Staged. Understanding these phases is critical for understanding how Git commits work.
+
+    git add * adds all Files
+
+    files stages in git
+    Unmodified -u
+    Modified -m
+    Staged
+
+    commit met comment
+
+    pushed to repository
+    
+    
+    
+    ===================================================================
+
+    Viewing Repository History
+
+    In Git we use the status and log commands to review the state and history of our Git branch timelines.
+
+    git records changes to files as a timeline
+    the head point at end where commits ar Committed
+
+    branches master is default
+    unique identifiers
+    commit a12603d5fceeb4397fcccb6897d1c23b33e1b41a
+
+    git  status
+
+    git log 
+    eerste 7 char van de id zie je ook tijdens je commit
+
+
+    git log --online
+
 ===================================================================
+
+Comparing Changes with Git Diff
+
+Git Diff is a powerful feature of Git that allows us to compare two files, or two versions of the same file, to observe what has changed over time.
+
+git dif id1 id2
+---id2
++++id2
+ lsdjkasdlkasfd
+
+ sdafksadfl
+
+ ===================================================================
+
+ Checking Out Previous Commits
+
+Using Git Checkout we can revert our working directory to a previous point in time based on specific commits. This also puts us into something called the detached head state.
+
+terug gaan in tijd om je oude code te bekijken
+git check 1981498 (terug naar een eerdere commit met id 1981498)
+je bent terug in tijd gegaan en je bent nu in detached state. niet meer bij head.
+temp work
++++++++++++++++++++========================================
+
+
+Git Reset and Revert to Undo Changes
+
+Reverting to older versions of your repository can be a tricky subject, and there are many commands to perform this operation.
+
+easy save 
+code terug zetten en weeer commiten
+
+anders
+git commit --amend *replacs* the  previous commit
+je vorig head is dan orphan en detached
+alleen doen als je nog niet gepushed heb na de repository
+
+git reset restting the head
+
+git reset head ~3   
+
+git revert complex
+
+creates a new commit wat de head word.
+undo a commit
+
+
+
+Git revert loses the history of commits after reversing changes. True or false?
+
+False
+Correct!
+================================================================
 

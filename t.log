@@ -1,0 +1,78 @@
+[33mcommit 49f42ab1cbb527a229bc9b492ad63422b225e1e3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: chris <samar.chris@gmail.com>
+Date:   Tue Dec 3 20:27:33 2024 +0100
+
+    git thuis
+
+[33mcommit a12603d5fceeb4397fcccb6897d1c23b33e1b41a[m
+Merge: 762d4b4 b75ac68
+Author: chris <samar.chris@gmail.com>
+Date:   Tue Dec 3 20:25:50 2024 +0100
+
+    Merge branch 'main' of https://github.com/kribz920/CBT_nuggets
+
+[33mcommit 762d4b4c81fdb65cba13810b651134d6b5ce5ade[m
+Author: chris <samar.chris@gmail.com>
+Date:   Tue Dec 3 20:25:30 2024 +0100
+
+    git add
+
+[33mcommit b75ac68bf9f08417e04db81f542947b5fca0097c[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Tue Dec 3 09:51:37 2024 +0100
+
+    list list dict
+
+[33mcommit 1e70238dd628dcf3a60d8787dbd39763c85310bd[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Tue Dec 3 08:31:37 2024 +0100
+
+    make dict list of lists
+
+[33mcommit 6f6e35f42e3fde52fa78746c50401680b238b18d[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Tue Dec 3 00:13:57 2024 +0100
+
+    list find most occuring
+
+[33mcommit f3ec756a0568279f8cb8a5644ff7559b12878c1f[m
+Author: chris <samar.chris@gmail.com>
+Date:   Mon Dec 2 23:10:48 2024 +0100
+
+    dict begonnen
+
+[33mcommit f7fcb806e94e6ee26ca882c3204fb3a41b038f6e[m
+Author: chris <samar.chris@gmail.com>
+Date:   Sun Dec 1 19:36:56 2024 +0100
+
+    double char
+
+[33mcommit 8c76b9268cf61ac7493e832c27ab303d5221cd61[m
+Author: chris <samar.chris@gmail.com>
+Date:   Sat Nov 30 23:08:37 2024 +0100
+
+    python samples
+
+[33mcommit d7ffa98d0fc80bc02ed8f1117a41b48a6b932da7[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Fri Nov 29 15:01:01 2024 +0100
+
+    git files
+
+[33mcommit 9e7106a9717bbc137804d16e193a92614db7109e[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Fri Nov 29 14:30:06 2024 +0100
+
+    new chap Git
+
+[33mcommit 5bec6c052f22233e3d5b85b8937aa6fa5364ad5d[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Fri Nov 29 13:51:16 2024 +0100
+
+    upload files
+
+[33mcommit 16bab91f6624f07356cf30b4f75d3857365e440c[m
+Author: Chris <chris.samar@zlm.nl>
+Date:   Fri Nov 29 09:09:54 2024 +0100
+
+    first commit
