@@ -1,0 +1,85 @@
+Getting Started with Git
+
+
+Understanding Version Control Systems and Git
+
+Version Control Systems are a way to maintain a historical record of all changes to your source code. 
+Git is a type of distributed system that does not rely on a central master copy.
+
+vcs
+version Control System
+
+to reference and roll back to
+collabrating with ohter people
+
+
+vcs rely on a master database to maintain all data. history, file revisions, etc.
+working on same file is possilble and not locked out.
+can work off line 
+
+git 2005 distributed version Control system
+iedereen heeft een full version van de repository.
+"full clones"  commit are locally the you  push to the master repository.
+
+
+in cloud or locally
+
+Installing Git
+
+In this video we'll walk through the installation process for Git and discuss a few of the options available to us.
+
+installation options leave default 
+editor VS code
+
+cmd
+git --version
+
+
+linux apt get git installation
+
+
+=================================================================
+
+Creating your First Repository
+
+Creating a repository in Git is an easy process. We'll walk through that here as well as creating our first commit.
+
+Which subdirectory does git create in order to store details and history for the repository?
+.git
+
+
+github to local you clone everything like also historical data.
+
+create repo form scratsh.
+
+git config --global user.name "chris samar"
+git config --global user.email "samar.chris@gmail.com"
+git config --list
+
+git init /in de folder die je waar je een repo van wilt maken.
+
+git add file om de file te tracken in je repo
+
+git commit -m "commented on"
+
+====================================================================
+
+Staging and Committing Files
+
+Files in Git have a lifecycle of three separate phases: Unmodified, Modified, and Staged. Understanding these phases is critical for understanding how Git commits work.
+
+git add * adds all Files
+
+files stages in git
+Unmodified -u
+Modified -m
+Staged
+
+commit met comment
+
+pushed to repository
+ 
+ 
+ 
+===================================================================
+
