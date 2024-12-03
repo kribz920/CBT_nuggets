@@ -234,3 +234,31 @@ def calculate_total(items_purchased, pinned_list):
         total_cost += price
 
     return unpurchased_items, receipt, total_cost
+    ===================================
+mijn oplossing set naar list list naar set
+    sets
+
+    def remove_duplicates(spells):
+    newspells = set()
+    newlist= []
+    for spel in spells:
+        newspells.add(spel)
+
+    for i in newspells:
+        newlist.append(i)
+    return newlist
+
+beter
+def remove_duplicates(spells):
+    return list(set(spells))
+======================================================
+doet het zelfde van een lijst naar een set verwijderd duplicates
+
+def remove_duplicates(lst):
+    newset= set()
+    for i in lst:
+        newset.add(i)
+    return newset
+        
+def remove_duplicates(lst):
+    return set(lst)
