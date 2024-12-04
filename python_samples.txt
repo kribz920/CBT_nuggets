@@ -44,3 +44,23 @@ def double_string(string):
     return record
 
 
+======================================
+
+als je iets een set maakt
+verwijder je alle duplicates
+
+ze zijn unorded 
+dus als je er over heen iterat krijg je niet altijd het zelfde
+
+
+set zit in memory en vind alles sneller
+en er zitten geen dubble in een set
+
+nu_EEN_Set = set(list_naam)
+
+empty_set = set{} //anders wordt het dict
+
+my_set.add('iteml')
+
+for item in my_set:
+    print(f"Current item: {itme}")
