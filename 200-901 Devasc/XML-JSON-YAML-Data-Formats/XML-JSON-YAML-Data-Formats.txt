@@ -1,0 +1,4 @@
+Why Use Plain Text Data Formats?
+
+Plain text data formats are legible for both humans and computers and allow us to easily transmit data between disparate systems.
+
