@@ -2,3 +2,62 @@ Why Use Plain Text Data Formats?
 
 Plain text data formats are legible for both humans and computers and allow us to easily transmit data between disparate systems.
 
+json xml yaml csv
+
+
+structured for computers
+annotated for humans
+open and extensible
+self-describing
+platform agnostic / lifespan
+
+
+human readable - computer readable
+
+Which of the following are popular formats today? (Choose three)
+YAML
+JSON
+XML
+
+==============================================================
+
+XML, JSON, and YAML Data Formats
+
+The three data formats we'll be reviewing are XML, JSON, and YAML. 
+They each have their own strengths and it's important as always to choose the right tool for the job.
+
+XML extensible markup language
+legacy support
+SOAP webbased api 
+
+verbose (longer and taller) extra bandwith/kost for trans port
+
+JSON
+javascript object notation
+
+popular
+lightweight
+native to JS
+
+YAML aint markup language
+highly legible
+compact/succint
+ideal for configuration
+
+XML has a lot of legacy support, but JSON is adopted more often by modern or newly-built systems. True or false?
+True
+
+====================================================================
+
+XML Syntax
+
+XML is a verbose and largely self-documenting data format based on the idea of tags, attributes, and values.
+
+works with open and closing tags
+<open attr=2>content</open>
+
+
+How are attributes distinguished from values?
+They're inside the XML tag brackets
+
+
