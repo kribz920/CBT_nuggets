@@ -64,3 +64,61 @@ my_set.add('iteml')
 
 for item in my_set:
     print(f"Current item: {itme}")
+
+
+=============================
+duplicates weg halen en vershil in sets laten zitten
+
+def find_missing_ids(first_ids, second_ids):
+    s1 = set(first_ids)
+    s2 = set(second_ids)
+    return list(s1 - s2)
+
+mijn code was ook goed
+def find_missing_ids(first_ids, second_ids):
+    new_first_ids = set(first_ids)
+    missing = []
+
+    for i in new_first_ids:
+        if i not in second_ids:
+            missing.append(i)
+    
+    
+    return missing
+=====================================================def main():
+    try:
+        
+        print(get_player_record(1))
+        print(get_player_record(2))
+        print(get_player_record(3))
+        print(get_player_record(4))
+    except Exception as e:
+        print(f"{e}")
+        
+    
+
+
+# Don't edit below this line
+
+
+def get_player_record(player_id):
+    if player_id == 1:
+        return {"name": "Slayer", "level": 128}
+    if player_id == 2:
+        return {"name": "Dorgoth", "level": 300}
+    if player_id == 3:
+        return {"name": "Saruman", "level": 4000}
+    raise Exception("player id not found")
+
+
+main()
+===============================
+
+def get_player_record(player_id):
+    if player_id == 1:
+        return {"name": "Slayer", "level": 128}
+    if player_id == 2:
+        return {"name": "Dorgoth", "level": 300}
+    if player_id == 3:
+        return {"name": "Saruman", "level": 4000}
+    raise Exception("player id not found")
