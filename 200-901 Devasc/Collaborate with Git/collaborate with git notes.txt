@@ -1,0 +1,110 @@
+Using Git for Collaboration
+
+Collaborating with git means pushing and pulling code changes to and from remote repositories as well as resolving the conflicts that inevitably arrive.
+git clone
+git push
+git pull
+git fetch
+git merge and remote
+
+master repository (central)
+any repo can the the master
+
+hosted local or remote in github (al repositories have the same standing)
+
+==============================================================================
+Initializing a Repository with Clone
+
+Like its name implies, git clone creates a copy of an existing repository.
+
+je kan ook klonen van je collega die een repository heeft
+
+clone form local folder, ssh, http or git
+ 
+
+dowload als zip kan ook
+
+git remote laat zien waaar je de repo van hebt en naar to kan pushen
+
+Which of the following is the repo git clone uses to create a clone from?
+Origin
+PS C:\Users\chris\Documenten\cbtnuggets\CBT_nuggets> git remote -v
+origin  https://github.com/kribz920/CBT_nuggets.git (fetch)
+origin  https://github.com/kribz920/CBT_nuggets.git (push)
+
+
+==============================================================================
+
+Synchronizing with Remote Repositories
+
+Git push and pull synchronize timelines between two repositories so changes can be shared among team members.
+
+git push origin
+
+git pull is bedoeld zo dat changes gereviewd kunnen worden
+
+
+Git push will push all commits on the current branch to a remote repo. True or false?
+True
+==============================================================================
+
+Working With Branches
+
+Branching is a powerful feature in git that lets you work simultaneously on two different timelines in your repository.
+
+een timeline voor het fixen van bugs
+andere timeline voor maken van nieuwe feature bv
+zo dat je los kan werken
+
+
+nieuwe branch maken
+git branche nieuwe_branche
+
+overswitchen naar nieuwe_branche
+git checkout nieuwe_branche 
+
+terug naar master
+git checkout master
+
+
+
+head point to the end of master branch maar als je een nieuwe branch maakt point die eind van die branch.
+
+=============================================================================
+
+
+Merging Branches and Resolving Conflicts
+
+Most confusion when working with git comes from merging branches together and resolving any conflicts that arise.
+
+als je wil mergen van je branches hier moet je opletten
+target branch en de receiving branch
+
+receiving is meestal current working on
+er kunne conflicten ont staan
+
+als je van de master branch niks hebt toegevoegd en van daar een nieuwe_branche hebt gemaakt en dan merged
+dit heet een fast-forward  merge
+
+maar als er nog gewerkt wordt aan master kan je niet normaal mergen.
+3-way merge als er geen conflicten zijn  gaat die vrij wel goed
+je kan dan met de zelfe file werk zolang je niet de zelfde lines aan past
+
+anders moet je keizen wat de waarheid wordt
+
+git add index.txt
+git commit
+
+git checkout master
+git merge featerX
+
+
+Which types of branches are in a git merge operation? (Choose two)
+Receiving
+Target
+
+Correct!
+
+dont leave branches unmerged for to long
+
+============================================================================
