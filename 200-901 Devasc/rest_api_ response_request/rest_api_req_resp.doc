@@ -1,0 +1,102 @@
+Introducing REST API Requests and Responses
+
+REST APIs typically leverage HTTP, so they rely on the Request and Response structure of HTTP communications.
+=============================================
+
+Request and Response
+
+All HTTP traffic is structured into text-based requests and responses, and this is true of REST API calls over HTTP as well.
+
+
+http/1.1 request and responses are plain text formatted communications that follow a specific structure
+
+    request  / responses    
+
+    start line
+
+    headers
+        key-value pair
+
+    blank line
+
+    body
+
+
+=================================================
+
+Request and Response
+
+All HTTP traffic is structured into text-based requests and responses, and this is true of REST API calls over HTTP as well.
+
+
+
+
+
+
+Which of the following is true of all requests and responses in HTTP?
+
+They're text-based messages
+
+======================================================
+
+HTTP Request Method
+
+The method or verb of an HTTP request provides some context for the purpose of the request and, in the case of RESTful APIs, is usually determined by the API specification.
+
+at top of the request trying to do
+token: get, head, post, put, delete, connect, options, trace
+
+in  start line
+
+
+GET http/1.1
+
+get info
+
+POST config data
+
+
+
+Where is the Request Method located in an HTTP request?
+
+The first word at the start of the message
+
+====================================================
+
+HTTP Response Codes
+
+HTTP responses have a numeric code associated with them, which follows a structure that defines the status of the response.
+
+3-digit code
+ bades on 1
+1XX infor
+2XX Succes response
+3XX Redirect
+4XX client error
+    404 page not found
+    405 method not allowed
+
+5XX Server errror
+
+ 
+All response codes have a required and prescribed text note associated with them. True or false?False
+
+==========================================================
+
+HTTP Headers
+
+Headers are a collection of key-value pairs that provide information about the HTTP request or response.
+optional
+
+
+
+
+Which of the following is the format of headers in the request and response?
+Key:Value
+=======================================================
+
+HTTP Requests and Responses Summary
+
+HTTP requests and responses are formally structured text messages that transmit data to and from a web server.
+
+
