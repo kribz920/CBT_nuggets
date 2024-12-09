@@ -1,0 +1,112 @@
+Introducing RESTful APIs
+
+RESTful APIs are programmatic interfaces that software can use to communicate with other software.
+
+
+RESTful api an api that follows a specific set of constrains
+
+    - unform interfaces 
+    - client-server
+    - stateless
+    - layered 
+    - cacheable
+    - code on demand (optional)
+Which data format do RESTful APIs most commonly deal in?
+Json
+========================================================
+
+RESTful API Constraints
+
+In order for an API to be considered RESTful, it must follow a set of rules outlined in the REST specification.
+
+- unform interfaces
+    ideally only on uri for any geven Resource
+    
+    /movie/{movieID}
+    /movie/{movieTitle}
+
+- client-server 
+    there must be a decoupled client and server in the implemantation architecture
+
+    all communication happens between the api interface
+
+-stateless
+    each api call independ 
+    the server cannot remember the client from request to request
+
+server onthoudt niks van client
+
+
+Which constraint indicates that your RESTful API calls must be completely self-contained?
+Stateless
+
+===========================================================
+
+REST vs. SOAP
+
+It's a great question that everyone asks. What makes REST different than SOAP?
+they'r both appproch to building an api for inter-program communication and passing data and command back and forth between programma's
+
+REST- representational state transfer
+    guidelines for the structure and organization of an api
+    architecture
+        not a protocal
+        can use json, xml, yaml, markdownm, csv, plain text...
+
+    hoe de code is geordernd
+
+SOAP
+    - Simple object acces control
+    A protocol  - specification at various layers
+                more overhead but more comprehensive
+
+    xlm only
+
+
+restful api can use querystring or request body
+url https://mycoolapi.com/employees/list?dept=17&active=true
+
+    {
+        "dept": "14"
+        "active" : "true"
+    }
+
+
+soap requires a verbose xml doc
+    soap envelope
+        soap header
+            header block
+        soap body
+            message block
+
+============================================================
+
+
+REST Tools
+
+The tools you choose to use for REST API testing and development are important. 
+They provide easy insight into what data you're transmitting and how your calls are being interpreted.
+
+detail van je request
+
+tools
+    webbrowser F12 dev tools
+    network - headers van je request en response etc
+
+    Visual studio code 
+        rest client addon 
+        je maakt een http doc met je 
+request
+https://swapi.co/api/people/2/
+
+click op request en al je de addon hebt dan krijg je een windown met de payload
+
+postman
+    ui tool voor api request
+    collections maken 
+
+==============================================================
+
+rest Summarizes
+
+
