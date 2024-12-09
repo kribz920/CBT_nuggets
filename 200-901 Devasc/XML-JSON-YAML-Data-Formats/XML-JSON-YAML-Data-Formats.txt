@@ -61,3 +61,107 @@ How are attributes distinguished from values?
 They're inside the XML tag brackets
 
 
+attr <tag1 attr="bla">
+
+<EmptyElement/>  is geldig een leeg gestoten tag 
+
+-================================================================\
+
+XML Document Object Model (DOM)
+
+The Document Object Model (DOM) is a way of visualizing your XML document as a tree where each element represents a node. This Nugget discusses how to view the DOM for your XML.
+
+tree form met siblings 
+
+handig dat vs je tree ziet en onderxml boom laat zien.
+
+==============================================================
+
+
+JSON Syntax
+
+Javascript Object Notation, or JSON, is a popular data format on the Internet because of its adherence to well-formed Javascript rules.
+
+==============================================================
+
+JSON Strings, Numbers, and Booleans
+
+JSON recognizes different data types of the values it transmits, including strings (text), numbers, and booleans (true/false) types. 
+net zoals python
+
+JSON supports which of the following data types? (Choose three)
+
+Strings
+Booleans
+
+Numbers
+Correct!
+
+============================================================== 
+
+{object met "key": "value"}
+[array]
+
+Objects can be nested inside of other objects in JSON. True or false?
+True
+================================================================
+
+YAML Syntax
+
+YAML Ain't Markup Language (YAML) has unique structures to its syntax to support its primary goal: human-legible data serialization.
+
+begin van een yaml file
+
+---
+---
+
+indetation is belangrijk
+key valy primary
+- 
+
+Which of the following is YAML's biggest differentiator from JSON and XML?
+Human legibility
+
+==================================================================
+
+YAML Strings, Numbers, Floats, and Booleans
+
+YAML supports a few basic data types for the values in its key-value pairs. Those types are strings, numbers (integers), floating point values, and booleans.
+
+---
+people:
+-  Id: 1 interger/number
+   Code: 524.37 FLoat
+   FirstName: Benjamin string
+   LastName: Finkel string
+   Email: ben.finkel@cbtnuggets.com string
+   Active: true booleans
+- Id: 2 
+  Code: 813.09
+  FirstName: Jane
+  LastName: Doe
+  Email: jane.doe@cbtnuggets.com
+  Active: true
+- Id: 3
+  Code: 102.9
+  FirstName: Pat
+  LastName: Smith
+  Email: pat.smith@cbtnuggets.com
+  Active: false
+...
+--- #This is the start of a new document in YAML
+item1: item1value
+item2: item2value
+
+YAML makes no differentiation between an integer and a decimal numeric value. True or false?
+
+False
+
+
+======================================================================
+
+Data Formats Summary
+
+The popular data formats — XML, JSON, and YAML — are all good choices for serializing data for transmission over HTTP.
+
+asci formats
