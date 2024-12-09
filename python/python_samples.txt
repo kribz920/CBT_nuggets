@@ -122,3 +122,67 @@ def get_player_record(player_id):
     if player_id == 3:
         return {"name": "Saruman", "level": 4000}
     raise Exception("player id not found")
+
+
+===============================
+Assignment
+Complete the purchase_item function. If the character doesn't have enough gold raise an exception with the text not enough gold. Don't handle the exception.
+
+Otherwise, return the amount of money the customer has leftover after completing the purchase.
+
+
+
+
+def purchase_item(price, gold_available):
+    if gold_available < price:
+        raise Exception("not enough gold")
+    return gold_available - price
+
+    =============================
+
+Here's a breakdown of how it works in a loop:
+
+Initialize sum: We start by setting sum = 0. This is our accumulator, where we'll store the running total.
+
+Loop through numbers: We use a for loop for i in range(1, n + 1): to iterate through each number from 1 to n. The loop will control the flow of adding each number to our total.
+
+Accumulate Sum: Inside the loop, we use sum += i. This is a shorthand for sum = sum + i, which means we get the current value of sum and add i to it. Then we update sum with this new total.
+
+Return sum: After the loop finishes, our sum variable contains the total of all numbers from 1 through n, and we return it as the result.
+
+Does this help you understand how the sum is calculated?
+
+def number_sum(n):
+    sum = 0
+    for i in range(1, n +1):
+        sum += i
+    return sum
+
+    ==============
+
+def find_min(nums):
+    min = float("inf")
+    for num in nums:
+        if num < min:
+            min = num
+    return min
+
+min vinden uit de lijst
+========================
+typ filter
+
+def remove_nonints(nums):
+    non_list = []
+    for num in nums:
+        if type(num) == int:
+            non_list.append(num)
+    return non_list
+            
+=====================
+factorial
+
+def factorial(num):
+    result = 1
+    for i in range(1, num + 1):
+        result *= i
+    return result
