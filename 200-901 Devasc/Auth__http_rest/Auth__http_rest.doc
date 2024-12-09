@@ -1,0 +1,83 @@
+Introduction to REST Authentication
+
+There are different ways — both basic and complex — to authenticate users with a RESTful API. 
+
+Authentication who are you
+authorization wat can you 
+
+
+==================================
+
+Base64 Encoding vs. Encryption
+
+Authentication details are often Base64-encoded and encrypted prior to being transmitted to the server.
+
+encoding Base64
+is not Encryption
+
+tls net zoals ssl maar dan beter
+hier voor het je een private key nodig
+
+
+Encryption in transmit
+
+=======================================
+
+HTTP Basic Authentication
+
+Basic authentication is the earliest and easiest form of authentication with HTTP.
+
+rfc 7617
+
+plain text  username  / password
+<type>==basisc
+
+basecoding
+
+Which header is used to transmit basic authentication information?Authorization
+
+==========================================
+
+API Key Authentication
+
+API keys are long strings, called tokens, that systems use to identify themselves in HTTP requests.
+
+plain-text token is generated, stored in a program and transmitted to the server in a request header
+
+
+
+authorization: <type> <token)
+
+
+API keys are sent with each request in the Authorization header. True or false?
+
+True
+
+=========================================
+
+Token Authentication
+
+Token authentication, specifically JWTs, is one of the most common authentication methods on the internet.
+javascript web token most popular
+
+{JWT} == {JOSN} + Cryptographic Signature
+krijg je na inloggen
+
+stateless ness
+
+session ID 
+
+speed hoeft niet in een db te kijken voor je information
+balanacing -  can safely distrute request across many server
+
+
+JSON Web Tokens (JWTs) are comprised of which of the following? (Choose two)
+Cryptographic signature
+JSON Data
+
+===============================================
+
+HTTP Authentication Summary
+
+HTTP Authentication can come in many forms, including Basic, API Key, and Token.
+

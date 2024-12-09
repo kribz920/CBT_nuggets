@@ -1,0 +1,50 @@
+Introduction to HTTP Parameters and Payloads
+
+HTTP messages can have parameters and payloads transmitted in different parts of the request and response messages.
+
+==============================================
+HTTP Query Strings
+
+Query strings are a portion of a URL that contain key-value pairs to transmit to the web server.
+
+sort quik query
+collection of values of the request met get
+
+The query string is separated from the URL using which character?
+
+?
+
+===============================================
+
+HTTP Payloads
+
+Payloads are the body of an HTTP message and can take many different forms.
+
+its optional
+meant to hold large amount of data
+
+
+
+Where in the HTTP message is the payload or body written?
+At the end, after a blank line
+
+===============================================
+
+Query Strings and Payloads in Action
+
+Query strings and payloads can be used by requests and responses in API calls.
+
+discogs.com/developers
+
+slimme api's geeft in zn response hyperlinks in als voorbeeld om dingen op tevragen zoeken etc
+But this is known as Hypermedia As The Engine Of Application
+
+If data needs to be transmitted via query string or body in the message, it'll be defined by the API documentation. True or false?
+True
+
+================================================
+
+
+HTTP Parameters and Payloads Summary
+
+Payloads and parameters are how data is transmitted back and forth between a web server and a requesting application.
