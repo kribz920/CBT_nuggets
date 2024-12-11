@@ -1,3 +1,148 @@
 Saying Goodbye to the CLI
 
 We're in a new era for configuring our infrastructure, so let's introduce where this skill is going to take us. 
+
+network automation term en what it is
+ ==========================================================
+
+
+ Why Network Automation?
+
+Does network automation help us at all? 
+Or is it just a different way to configure a network? 
+This Nugget will bring to light why network automation is all the rage these days. 
+
+
+efficiant to get things done
+
+
+4 reasons
+
+1 faster to get it done, makes us agile
+
+2 standardization of work/configure
+
+3 know outcomes know exactly what its doing
+  make it scaleable
+
+4 monitoring 
+
+look as network as whole.
+
+netdev ops
+
+need to do learn all parts and peaces
+
+Which of the following are the main benefits of network automation?
+all above
+=============================================================
+
+
+What Can You Automate?
+
+Network automation is just deploying configs quicker, right? Maybe not. This Nugget will cover WHAT you can automate.
+
+1.  monitoring
+    start with read only tasks to learn
+    show config / snmp get to much data, more then you need.
+    make easy to read script 
+
+    lowest risk 
+
+2.  device provisioning
+    most of the time same basic config
+    make a template with place holder {{device.hostname}} etc.
+    JINJA template    YAML
+
+3.  migrations
+    make it easier 
+
+4.  config management
+        config devices
+
+    desired state of our network
+        is there a drift  form the desired state?
+    make polices to check you script against internal policies
+
+5.  troubleshooting
+    check all ospf neighbours, all port errors if it happens make script the heal it self.
+    to fix the issue.
+
+If you want to reduce the risk of breaking something, which of the following should you automate first?
+Network monitoring
+
+
+=================================================================
+
+The Evolution of Network APIs
+
+We're going to introduce some major topics in this Nugget while also taking a stroll down memory lane.
+
+human came before APIs with a console login 
+
+machine communicatie via APIs, network device use network APIs
+
+passed:
+    snmp we used for monitoring and collect data, with an agent
+    vendor specific, all or nothing no logic.
+    not structured not very secure v3 no ecryption.
+
+past/present: CLI   
+    cli isnt dead
+    can use telnet/ssh is like being on console.
+    netconf is for network in 2006 
+    IETF-2006
+    YANG
+    to replace snmp, sends data in xml
+    structured data
+    uses port 22
+    tcp
+    uses RPC remote procedure calls
+    REST API --- restconf
+
+Which API protocol uses the SSH protocol as its transport layer?
+NETCONF
+
+=====================================================================
+
+Network Programmability vs. Network Automation
+
+Programmability and automation are often confused, so let's clear up the meaning of these two terms.
+
+Programmability is writing scripts met specifics taks to specific devices.
+you could use just python for this 
+
+automation is repeatable taks again large amout of devices or groups of devices.
+desired state   
+could make you network self healing
+
+
+anisble is a tool for automation en orchistartion
+automation = what needs to happe
+orchistartion= when does it need to happen
+
+writen in python
+free/opensource/ agentless
+Modules
+    you make a playbook in YAML, make a module, pre build
+
+When we talk about Ansible, which task are we referring to?
+Network automation
+=========================================================================
+
+Devices and Controllers in the Era of SDN
+
+How we interact with devices and controllers matters. Learn about them in this Nugget.
+
+SDA is
+
+use to be config device with the controle plane. 
+we taken te controle plane to a central place
+
+
+cisco ACI  draait op een apic 
+apic dc en apic em
+
+Which Cisco offering can help engineers integrate their controller with other networking platforms?
+DNA Center Platform
+======================================================================
