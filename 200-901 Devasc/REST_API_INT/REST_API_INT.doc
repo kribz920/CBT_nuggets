@@ -36,3 +36,40 @@ Postman Collections and Folders
 Postman allows you to organize your saved requests into collections and folders.
 
 Which of the following can be associated with a collection? (Choose three)
+
+Pre-request scripts
+Test scripts
+Authorization details
+====================================================
+
+
+Postman Scripts
+
+Scripts in Postman allow you to run Javascript code before and after your requests.
+Postman runs a Javascript enviroment for scripts execution both pre and post request
+
+
+tab Pre-request scripts en testing
+
+Which type of test (post-response) script runs first after a response is returned?
+Response-level
+Folder-level
+Request-level
+Collection-level <---
+
+
+============================================================
+
+Postman Environments
+
+Environments let you create custom variables that can be easily swapped out when executing requests in Postman.
+
+recht boven in dropdown menu
+
+bv test env en prod env
+
+How do you reference variables in your Postman requests?
+{{ }}
+
+==================================
+
