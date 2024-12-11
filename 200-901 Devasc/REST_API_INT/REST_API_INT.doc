@@ -13,3 +13,26 @@ going thourgh tabs in Postman
 
 header/body hier kan je parameters invoegen
 
+raw output can be view via console
+
+==============================================
+HTTP Auth with Postman
+
+Postman makes it easy to set up basic auth for your requests.
+
+auth tab
+select type of authorization
+
+
+in de collection (parent) kan je je basic auth username/password her gebruiken. en toch nog overschrijver als het moet.
+
+
+Using the Postman UI to build a basic auth request doesn't create the required authorization header for you. True or false?
+false
+==============================================
+
+Postman Collections and Folders
+
+Postman allows you to organize your saved requests into collections and folders.
+
+Which of the following can be associated with a collection? (Choose three)
