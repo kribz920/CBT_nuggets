@@ -1,0 +1,118 @@
+Introducing Data Models and YANG
+
+Before you can start coding, you need to understand the structure of the data being sent.
+
+What is a Data Model?
+
+What good is data if you can't interpret it? Network devices feel the same way. 
+Let's introduce the concept of modeling data in this Nugget. 
+
+how to send data
+
+
+datamodel - datascheme
+data model person:
+    leaf height:
+            datatype number
+            description "height in com"
+            max: 30
+            min: 1
+
+    leaf name:
+            type string
+            maxlentgh 100
+
+{ person:
+    height: 1,75
+    name: chris samar
+    }
+
+
+Which of the following is another term for a "data model?"
+
+schema!
+
+========================================================
+
+
+How YANG Works
+
+Yet Another Next Generation (YANG) is all about defining how a data model can be written and agreed upon. 
+We'll introduce the structure of a YANG data model in this Nugget. 
+
+before senden need to be agreed upon of what structure
+
+2003 NETCONF --yang datamodeling language
+
+2006 rfc6020 YANG
+
+layer 1 yang datamodel
+    module interfaces
+        containers "interfaces""
+            list interface:
+                key: "name";
+                    leaf
+                        name:"sdfs";
+                        type: string;
+
+        containers "interfaces-state
+                    leaf admin-status
+                    type enumaration
+                        enum "up"
+                        enum "down"
+                        enum "testing"
+
+netconfig dot org
+
+Which YANG model characteristic defines the final tier of the branch and identifies the key and value?
+Container
+Leaf <-----
+List
+Module
+
+
+=======================================================
+
+
+YANG in Action
+
+How does YANG actually work in the real world? Let's take a look.
+
+Which of the following refers to the list of data models returned by network devices?
+
+Capabilities <----
+YANG models
+Features
+IETF models
+
+
+
+=======================================================
+
+YANG Tools to Make Your Life Easier, Win Friends, and Influence People
+
+Figuring out which YANG model to use and how to write code 
+for it on your own would be an impossible task without these tools. 
+
+yangcatgalog.org    
+
+        yangsearch
+
+yangexplorer from github
+
+Which version of Python does Yang Explorer require?
+2.5
+3.6
+3
+2.7 <---
+
+maar is niet meer sinds 2020
+
+====================================================
+This Nugget is Important
+
+Things may feel a bit fuzzy right now, but hang in there. There's a light at the end of the tunnel.
+
+YANG tools make exploring a device's YANG models a breeze. True or false?
+True <-----
+False
