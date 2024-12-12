@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Network"
+		}
+	],
+	"settings": {
+		"ansible.python.interpreterPath": "c:\\Users\\chris\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+	}
+}
