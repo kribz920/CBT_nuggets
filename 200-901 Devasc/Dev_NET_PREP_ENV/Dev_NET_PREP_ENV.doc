@@ -1,0 +1,97 @@
+Introduction
+
+You're probably very excited to start writing some Python scripts or Ansible playbooks and dive into the expansive world of automation. 
+It's hard not to be excited!
+Despite that, you'll want to hold your horses for just a second (trust me, you'll get into the development fun sooner rather than later!). 
+he best way to ensure that we are ready to begin developing is to prepare a working development environment, complete with all the tools we'll need. 
+Just like how a homebuilder isn't going to begin building a foundation without their hammer, we need to make sure all our tools are ready!
+
+step zero setup all your tools
+=====================================================
+
+While you're likely tempted to download all the development tools you'll need directly to your actual workstation, 
+there is a better solution—running a dedicated Linux-based development environment that is separate from your actual workstation. 
+This gives us the best of both worlds. We can develop on Linux and take advantage of its
+developer-friendly architecture and rich package support without disrupting our regular OS (e.g., Windows).
+
+We have two main options for deploying a Linux machine to run our development environment:
+
+    Running Linux in a VM
+    Running the Windows Subsystem for Linux (WSL 2)
+
+Let's talk about what we need to do to deploy Linux using either option!
+
+Before we begin, make sure virtualization is enabled on your system! Consult your motherboard/system's documentation for more details.
+
+1 wat OS 
+2 wat os should we use
+    linux easy 
+    compatibility (dev env)
+
+options for deploying linux
+    single linux install
+    dual but win/linux
+    vm with linux
+    WLS 2
+
+
+
+Linux makes for a great development platform due to the abundance of development-centric packages. True or false?
+True
+
+=========================================================================
+
+Deploying Ubuntu Linux in a VM
+
+Let's dive into deploying Ubuntu Desktop in a virtual machine using VMware Workstation!
+
+1 downlaod ubuntu Desktop, server versie heeft geen GUI
+
+vm-tools maak bv je resoltie in orde
+
+What command did we use to install VMware Tools on the Ubuntu VM?
+sudo apt install open-vm-tools
+
+wat makkelijker is WSL
+in admin terminal
+
+wsl --install
+
+
+PS C:\windows\system32> wsl --install
+Installing: Virtual Machine Platform
+Virtual Machine Platform has been installed.
+Installing: Windows Subsystem for Linux
+Windows Subsystem for Linux has been installed.
+Installing: Windows Subsystem for Linux
+[==========================62,0%====                       ]
+
+
+
+reboot 
+install daarna:
+sudo apt update
+sudo apt upgrade -y
+
+daarna ansible 
+sudo add-apt-repository ppa:ansible/ansible
+sudo apt install wget software-properties-common apt-transport-https
+sudo apt install ansible -y
+
+powershell 
+sudo apt install powershell
+sudo apt install wget software-properties-common apt-transport-https
+
+docker 
+
+en voor Vs Code de wsl extention
+na installatie herstart en verder met installatie met app wsl
+ubuntu wordt nu verder gedraaid
+
+Ubuntu is al geïnstalleerd.
+Ubuntu starten...
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username:
+
