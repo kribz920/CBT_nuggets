@@ -1,0 +1,240 @@
+Network Device Development the Modern Way
+
+It all comes together in this Nugget. Let's get our first taste of network programmability 
+with the NETCONF protocol.
+
+
+netconf
+2006 rfc 4741 oldtimes 
+replace snmp
+
+who netconf works
+netconf is the protocol that transmits data
+netconf uses ssh tcp 
+prot 830
+its encrypted
+and uses auth
+
+we can get operational state of our devices
+we can get configuration state of our Devices
+we can edit configurations of our devices
+
+via xml structured data
+
+these core items
+
+netconf = ssh = get 
+                - yang model
+                response 
+                - yang model
+
+IETF-interfaces
+    interfaces
+        config
+    intfaces-state
+        operational status
+
+netconfg get get-config
+        
+
+read this from bottom to top
+content     configuration/operational data      <data> <xml> payload yang structure
+operations  actions to take                     get <get-config> - <edit-config>, etc
+messages    remote procedure call rpc           <rpc> <rpc-reply> 
+transport   tpc/ip methond                      ssh
+    
+    
+we are the manager en device is agent
+1   we send a hello <hello>
+2   retrieve <capabilities>
+
+3   investigate available models, determin which to use
+4   compose opration <get-config>
+5   send message <rpc>
+6   retrieve <rpc-reply>
+7   process data
+
+
+data stores
+    running -config 
+    startup - config
+    candidate config
+
+
+
+
+Which example of an XML tag would be passed at the operations level of the NETCONF protocol stack?
+<rpc message-id:1234>
+ssh user@1.2.3.4 -p 830
+<edit-config>
+<data>
+Correct!
+
+
+
+=====================================================================
+
+Enabling NETCONF on an IOS-XE Device
+
+Out of the box, most devices won't have NETCONF turned on. Learn the steps 
+to enable NETCONF on a Cisco IOS-XE device.
+
+conf t
+line con 0 
+logging synchronous
+exit
+conf t
+
+
+# need a hostname and domain-name
+# username and password en crypto key
+
+ip ssh version 2
+
+line vty 0 4 
+login local
+transport input ssh
+
+
+# enabel netconf
+netconf ssh
+netconf-yang
+
+
+
+R1#sh netconf sche
+R1#sh netconf schema ?
+  |     Output modifiers
+  <cr>  <cr>
+
+R1#sh netconf schema 
+New Name Space 'urn:ietf:params:xml:ns:netconf:base:1.0'
+<VirtualRootTag> [0, 1] required
+  <rpc-reply> [0, 1] required
+    <ok> [0, 1] required
+    <data> [0, 1] required
+    <rpc-error> [0, 1] required
+      <error-type> [0, 1] required
+      <error-tag> [0, 1] required
+      <error-severity> [0, 1] required
+      <error-app-tag> [0, 1] required
+      <error-path> [0, 1] required
+      <error-message> [0, 1] required
+      <error-info> [0, 1] required
+        <bad-attribute> [0, 1] required
+        <bad-element> [0, 1] required
+        <ok-element> [0, 1] required
+        <err-element> [0, 1] required
+        <noop-element> [0, 1] required
+        <bad-namespace> [0, 1] required
+        <session-id> [0, 1] required
+  <hello> [0, 1] required
+    <capabilities> 1 required
+      <capability> 1+ required
+  <rpc> [0, 1] required
+    <close-session> [0, 1] required
+    <commit> [0, 1] required
+      <confirmed> [0, 1] required
+      <confirm-timeout> [0, 1] required
+    <copy-config> [0, 1] required
+      <source> 1 required
+        <config> [0, 1] required
+          <cli-config-data> [0, 1] required
+            <cmd> 1+ required
+          <cli-config-data-block> [0, 1] required
+          <xml-config-data> [0, 1] required
+            <Device-Configuration> [0, 1] required
+              <> any subtree is allowed
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+      <target> 1 required
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+    <delete-config> [0, 1] required
+      <target> 1 required
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+    <discard-changes> [0, 1] required
+    <edit-config> [0, 1] required
+      <target> 1 required
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+      <default-operation> [0, 1] required
+      <test-option> [0, 1] required
+      <error-option> [0, 1] required
+      <config> 1 required
+        <cli-config-data> [0, 1] required
+          <cmd> 1+ required
+        <cli-config-data-block> [0, 1] required
+        <xml-config-data> [0, 1] required
+          <Device-Configuration> [0, 1] required
+            <> any subtree is allowed
+    <get> [0, 1] required
+      <filter> [0, 1] required
+        <config-format-text-cmd> [0, 1] required
+          <text-filter-spec> [0, 1] required
+        <config-format-text-block> [0, 1] required
+          <text-filter-spec> [0, 1] required
+        <config-format-xml> [0, 1] required
+        <oper-data-format-text-block> [0, 1] required
+          <show> 0+ required
+          <exec> 0+ required
+        <oper-data-format-xml> [0, 1] required
+          <show> 0+ required
+          <exec> 0+ required
+    <get-config> [0, 1] required
+      <source> 1 required
+        <config> [0, 1] required
+          <cli-config-data> [0, 1] required
+            <cmd> 1+ required
+          <cli-config-data-block> [0, 1] required
+          <xml-config-data> [0, 1] required
+            <Device-Configuration> [0, 1] required
+              <> any subtree is allowed
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+      <filter> [0, 1] required
+        <config-format-text-cmd> [0, 1] required
+          <text-filter-spec> [0, 1] required
+        <config-format-text-block> [0, 1] required
+          <text-filter-spec> [0, 1] required
+        <config-format-xml> [0, 1] required
+    <kill-session> [0, 1] required
+      <session-id> [0, 1] required
+    <lock> [0, 1] required
+      <target> 1 required
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+    <unlock> [0, 1] required
+      <target> 1 required
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+    <validate> [0, 1] required
+      <source> 1 required
+        <config> [0, 1] required
+          <cli-config-data> [0, 1] required
+            <cmd> 1+ required
+          <cli-config-data-block> [0, 1] required
+          <xml-config-data> [0, 1] required
+            <Device-Configuration> [0, 1] required
+              <> any subtree is allowed
+        <candidate> [0, 1] required
+        <running> [0, 1] required
+        <startup> [0, 1] required
+        <url> [0, 1] required
+    <notification-on> [0, 1] required
+    <notification-off> [0, 1] required
