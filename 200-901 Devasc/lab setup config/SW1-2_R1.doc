@@ -1,0 +1,79 @@
+
+hostname sw1
+ip domain name chris.nl
+username chris password 0 Joda1234!
+enable password Joda1234!
+interface Vlan1
+ip address dhcp
+nos hut
+
+ip http server
+ip http secure-server
+crypto key generate ec keysize 384
+
+# no ip route 0.0.0.0 0.0.0.0 192.169.0.1
+ip route 0.0.0.0 0.0.0.0 182.168.178.1
+
+line vty 0 4
+ 
+ privilege level 15
+ login local
+ transport input ssh
+!
+!
+
+
+
+hostname sw2
+ip domain name chris.nl
+username chris password 0 Joda1234!
+enable password Joda1234!
+interface Vlan1
+ ip address dhcp
+no shut
+
+
+# no ip route 0.0.0.0 0.0.0.0 192.169.0.1
+ip route 0.0.0.0 0.0.0.0 182.168.178.1
+
+ip http server
+ip http secure-server
+crypto key generate ec keysize 384
+
+
+line vty 0 4
+ 
+ privilege level 15
+ login local
+ transport input ssh
+!
+!
+
+====================================
+
+
+hostname R1
+ip domain name chris.nl
+username chris password 0 Joda1234!
+enable password Joda1234!
+interface eth0/0
+ip address dhcp
+!
+
+ip http server
+ip http secure-server
+crypto key generate ec keysize 384
+
+
+line vty 0 4
+ 
+ privilege level 15
+ login local
+ transport input ssh
+!
+
+=========================================
+
+default gateway werk
+no ip route 0.0.0.0 0.0.0.0 192.169.0.1
+ip route 0.0.0.0 0.0.0.0 182.168.178.1
