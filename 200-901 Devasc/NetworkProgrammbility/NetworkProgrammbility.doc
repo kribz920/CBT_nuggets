@@ -92,7 +92,7 @@ past/present: CLI
     can use telnet/ssh is like being on console.
     netconf is for network in 2006 
     IETF-2006
-    YANG
+    YANG for structure
     to replace snmp, sends data in xml
     structured data
     uses port 22

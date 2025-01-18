@@ -49,7 +49,7 @@ we are the manager en device is agent
 2   retrieve <capabilities>
 
 3   investigate available models, determin which to use
-4   compose opration <get-config>
+4   compose operation <get-config>
 5   send message <rpc>
 6   retrieve <rpc-reply>
 7   process data
