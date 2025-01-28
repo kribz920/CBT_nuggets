@@ -1,0 +1,41 @@
+Real-World Automation with NX-API
+
+We need a big win. Let's talk about a real-world use case for automation with NX-OS
+
+iets automaten met rest en cli
+
+Show CDP Neighbors
+
+Let's take a look at the show cdp neighbors output so we can understand the data that we can work with.
+
+
+met info van cdp neighbors een description maken op de poort
+
+Getting the Data
+
+Let's get the data from the show cdp neighbors command and store it in a variable.
+
+output nx-api sandbox
+show cdp neighbors
+
+
+
+import requests
+import json
+
+switchuser = "admin"
+
+
+Which of the following is the endpoint URL for handling login POST requests on NX-API REST?
+/api/mo/aaaLogin.json
+
+
+
+We're using the counter to identify which CDP neighbor we're currently evaluating when we use [counter] 
+while parsing out the hostname, local_int, and remote_int variables. True or false? True
+
+Setting the Configuration
+
+Let's let the script work it's magic. In this Nugget, we'll wrap up with our POST method. 
+Which line tells the script to only configure the Ethernet interfaces?
+if local_int != 'mgmt0':
