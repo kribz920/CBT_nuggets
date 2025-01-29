@@ -1,13 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../Network"
-		}
-	],
-	"settings": {
-		"ansible.python.interpreterPath": "c:\\Users\\ chris\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
-	}
-}   
+    "folders": [
+        {
+            "path": "200-901 Devasc"
+        },
+        {
+            "path": "aci_ansible_learning_labs_code_samples"
+        }
+    ],
+    "settings": {
+        "ansible.python.interpreterPath": "c:\\Users\\samar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+    }
+}

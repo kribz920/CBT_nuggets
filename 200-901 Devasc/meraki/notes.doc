@@ -1,0 +1,10 @@
+
+Reading the documentation is critical to understanding the structure of each method and the types of parameters the methods will accept. True or false?
+True
+
+Updating Configs with the Meraki SDK
+
+We've gathered the data from our network. Let's shake things up a bit and issue configuration changes.
+
+The data body in an update method can come from the result of a get method. True or false?
+True
