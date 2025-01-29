@@ -1,0 +1,25 @@
+Automation with the Meraki Python SDK
+by
+
+Scripting Made Easier with SDKs
+
+A cleaner, easier way to script with Python — software development kits (SDKs) to the rescue.
+
+Python libary in meraki SDK
+
+Exploring the Meraki SDK
+
+Getting used to reading documentation is an important skill to have when dealing with SDKs because every SDK is different. In this Nugget, you'll learn about this concept.
+
+dashboar.meraki.com/api/v0/organations
+
+Where can you find the full documentation including test methods and class documentation with examples?
+pypi.org/project/meraki-sdk
+
+pip install meraki-sdk==1.0.2
+
+pypi voor documentation
+
+
+To work with the Meraki SDK, which library must we import?
+from meraki_sdk.meraki_sdk_client import MerakiSdkClient
