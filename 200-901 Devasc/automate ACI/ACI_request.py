@@ -49,7 +49,7 @@ get_response = requests.get(
 post_payload = {
     "fvAp": {
         "attributes": {
-            "descr": "test this bitches",
+            "descr": "",
             "dn": "uni/tn-Heroes/ap-Power_Up"
         }
     }
