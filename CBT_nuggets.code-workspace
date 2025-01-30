@@ -5,6 +5,12 @@
         },
         {
             "path": "aci_ansible_learning_labs_code_samples"
+        },
+        {
+            "path": "../aci_ansible_learning_labs_code_samples/.git"
+        },
+        {
+            "path": "../aci_ansible_learning_labs_code_samples"
         }
     ],
     "settings": {
