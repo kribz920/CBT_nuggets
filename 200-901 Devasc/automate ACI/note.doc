@@ -1,0 +1,18 @@
+We can export a JSON copy of every object visible from the ACI GUI. True or false?
+True
+
+API Inspector
+
+Want an easier way to get started with the API? This Nugget will cover the built-in API Inspector tool in ACI.
+
+tandwiel kan je Inspector vinden
+
+
+Even authentication attempts are logged to the API Inspector. True or false?
+True
+
+
+In the URL, which would follow the /mo/ path?
+The DN of the object
+Which of the following is the name of the key in our cookie dictionary?
+APIC-cookie
