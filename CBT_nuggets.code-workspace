@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"folders": [
 		{
 			"path": "."
@@ -8,3 +9,23 @@
 		"ansible.python.interpreterPath": "c:\\Users\\ chris\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
 	}
 }   
+=======
+    "folders": [
+        {
+            "path": "200-901 Devasc"
+        },
+        {
+            "path": "aci_ansible_learning_labs_code_samples"
+        },
+        {
+            "path": "../aci_ansible_learning_labs_code_samples/.git"
+        },
+        {
+            "path": "../aci_ansible_learning_labs_code_samples"
+        }
+    ],
+    "settings": {
+        "ansible.python.interpreterPath": "c:\\Users\\samar\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+    }
+}
+>>>>>>> 1265f66b45f132d7f4303aeffb16197631f295aa

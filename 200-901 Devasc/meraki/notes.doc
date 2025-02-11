@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Automation with the Meraki Python SDK
 by
 
@@ -23,3 +24,15 @@ pypi voor documentation
 
 To work with the Meraki SDK, which library must we import?
 from meraki_sdk.meraki_sdk_client import MerakiSdkClient
+=======
+
+Reading the documentation is critical to understanding the structure of each method and the types of parameters the methods will accept. True or false?
+True
+
+Updating Configs with the Meraki SDK
+
+We've gathered the data from our network. Let's shake things up a bit and issue configuration changes.
+
+The data body in an update method can come from the result of a get method. True or false?
+True
+>>>>>>> 1265f66b45f132d7f4303aeffb16197631f295aa
