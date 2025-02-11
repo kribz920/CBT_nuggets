@@ -1,0 +1,19 @@
+//'x-auth-token': 'x-auth-token-value' 
+ //'content-type': 'application/json' 
+ import http.client
+
+conn = http.client.HTTPSConnection("zlm-dnacenter-mgmt.zlm.local")
+
+headers = {
+    'content-type': "application/json",
+    'authorization': "<Authorization>"
+    }
+
+conn.request("POST", "/dna/system/api/v1/auth/token", headers=headers)
+
+res = conn.getresponse()
+data = res.read()
+
+print(data.decode("utf-8"))
+
+SDK

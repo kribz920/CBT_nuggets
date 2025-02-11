@@ -1,0 +1,41 @@
+
+Overview
+
+Join Knox Hutchinson as he teaches you how to install and use the ACI Toolkit and SDK to automate ACI tasks.
+
+Learn how to acquire the ACI Toolkit documentation, how to create a tenant by using the correct SDK, how to leverage sample scripts from the ACI Toolkit, and how to use apps from the ACI Toolkit. 
+
+Recommended Experience
+
+At least one year of experience with software development including Python programming is recommended, but not required
+Related Job Functions
+
+Network engineer
+DevOps engineer
+Cloud engineer
+Software developer
+Knox Hutchinson has been a CBT Nuggets trainer since 2018 and has received a variety of Microsoft and Cisco certifications. His areas of expertise include data analysis, data visualization, and business intelligence solutions. 
+
+Toolkits and SDKs for ACI
+
+Toolkits are so much more than just SDKs. We'll introduce the ACI Toolkit and its core capabilities in this skill.
+
+
+Getting Started with the Python ACI Toolkit
+
+An important step to using the ACI Toolkit is getting the ACI Toolkit. In this Nugget, we'll show you how to get the ACI Toolkit as well as where you can find documentation on it. 
+url
+Where can you find the official documentation of ACI Toolkit?
+acitoolkit.readthedoc.io
+
+
+dowload SDK
+github.com/datacenter/acitoolkit
+
+
+Creating a Full Tenant with the ACI Toolkit
+
+Creating a tenant can be a large and lengthy process. This Nugget will show you how much simpler it can be with the right SDK.
+
+Your script will operate as expected even if you don't call the login method on the session object. True or false?
+True

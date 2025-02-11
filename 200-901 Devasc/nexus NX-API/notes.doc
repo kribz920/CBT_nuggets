@@ -39,3 +39,5 @@ Setting the Configuration
 Let's let the script work it's magic. In this Nugget, we'll wrap up with our POST method. 
 Which line tells the script to only configure the Ethernet interfaces?
 if local_int != 'mgmt0':
+
+
