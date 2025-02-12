@@ -1,0 +1,22 @@
+first you write test that fail so you will know what you will expect from you code
+the you wil develope you code with all functionalities.
+so all you test wil start passing what failed Before
+
+
+
+
+
+write test
+check what fails
+develope code
+check what passes
+refactor code
+
+
+    expexted inputs
+    uneexpeted inputs
+     (advantages clear target to reach, 
+     Avoid ambiguities
+     easier debug process
+     less to miss
+     )

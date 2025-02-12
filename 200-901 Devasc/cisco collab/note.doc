@@ -1,0 +1,103 @@
+Cisco Collaboration Platform in the Modern Era
+
+The collaboration platform keeps growing, and with that comes new and exciting ways to collaborate and automate. 
+This Nugget will introduce the various collaboration platforms and their API capabilities. 
+
+
+cissco unified communications manager
+uds interface
+cumc uses soap
+
+pyaxl
+
+the axl ipa
+
+ipv postman soapui
+over http
+<getuser>
+    <user></user>
+</getuser>
+
+cucm application tab
+    plugins
+    download cisco axltookit upload deze wsdl in soapui
+
+met soap ui kan je een nieuw project starten met de toolkit
+Which file type has all of the available methods and parameters saved as templates?
+wsdl
+
+
+uds
+bacis get tools
+developer.cisco.com/site/user-data-services
+get started website
+
+sommige zaken hebben wel auth nodig sommige niet
+en user permissions zijn belangrijk
+
+
+To access authenticated UDS endpoints, which user group does a user have to be a member of?
+SCCM End Users
+
+Which library converts XML data to a Python dictionary?
+xmltodict
+
+Automating Webex Teams
+
+Webex Teams is a collaboration app that's changing how we use Webex devices. 
+This skill covers how we can get started automating the platform.
+
+webex teams is free (in het klein) soort slack
+
+chat collabt toool
+
+team heeft members (email uitnodiging)
+     heeft rooms voor projects of fun rooms
+
+Bots als een interface down gaat dat je dan een message in webex teams krijgt
+via een app
+voor info
+    developer.webex.com
+
+
+Programs that can automatically post messages to your Rooms are referred to as which of the following?
+Bots
+Creating a Team
+
+Before we can do anything, we need to create a team. Here's how we can use the Python requests library to create a team in Webex.
+een token heeft 12 uur duration timer
+
+
+je hebt bovenliggen id nodig om daar in zaken te doen. als je daar in iets wil aanmaken en je moet een tit
+el geven
+
+
+er is ook een sdk
+pip install webexteamssdk
+
+To create a new user, which of the following is the only required field?
+emails
+
+A. another test (Red Bar Pattern)
+B. break (Red Bar Pattern)
+C. triangulate (Green Bar Pattern)
+D. starter test (Red Bar Pattern)
+E. fake it (Green Bar Pattern)
+
+TDD
+Step 1. Write a test: Write a test that tests for the new class or function that you want to add to your code.
+ Think about the class name and structure you will need in order to call the new capability 
+ that doesn’t exist yet—and nothing more.
+
+Step 2. Test fails: Of course, the test fails because you haven’t written the part that works yet. The idea here 
+is to think about the class or function you want and test for its intended output. This initial test failure shows 
+you exactly where you should focus your code writing to get it to pass. This is like starting with your end state in mind, 
+which is the most effective way to accomplish a goal.
+
+Step 3. Write some code: Write only the code needed to make the new function or class successfully pass. 
+This is about efficiency and focus.
+
+Step 4. Test passes: The test now passes, and the code works.
+
+Step 5. Refactor: Clean up the code as necessary, removing any test stubs or hard-coded variables used in testing. 
+Refine the code, if needed, for speed.
